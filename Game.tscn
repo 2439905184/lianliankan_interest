@@ -301,36 +301,42 @@ __meta__ = {
 }
 
 [node name="Line2D0" type="Line2D" parent="."]
+visible = false
 points = PoolVector2Array( 337, 169, 406, 357 )
 width = 5.0
 default_color = Color( 1, 0.964706, 0.498039, 1 )
 antialiased = true
 
 [node name="Line2D1" type="Line2D" parent="."]
+visible = false
 points = PoolVector2Array( 405, 173, 335, 359 )
 width = 5.0
 default_color = Color( 1, 0.964706, 0.498039, 1 )
 antialiased = true
 
 [node name="Line2D2" type="Line2D" parent="."]
+visible = false
 points = PoolVector2Array( 482, 171, 569, 358 )
 width = 5.0
 default_color = Color( 1, 0.964706, 0.498039, 1 )
 antialiased = true
 
 [node name="Line2D3" type="Line2D" parent="."]
+visible = false
 points = PoolVector2Array( 553, 176, 482, 354 )
 width = 5.0
 default_color = Color( 1, 0.964706, 0.498039, 1 )
 antialiased = true
 
 [node name="Line2D4" type="Line2D" parent="."]
+visible = false
 points = PoolVector2Array( 628, 177, 628, 367 )
 width = 5.0
 default_color = Color( 1, 0.964706, 0.498039, 1 )
 antialiased = true
 
 [node name="Line2D5" type="Line2D" parent="."]
+visible = false
 points = PoolVector2Array( 702, 173, 702, 354 )
 width = 5.0
 default_color = Color( 1, 0.964706, 0.498039, 1 )
