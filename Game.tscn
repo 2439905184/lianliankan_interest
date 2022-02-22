@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://ruibian.TTF" type="DynamicFontData" id=1]
 [ext_resource path="res://Game.gd" type="Script" id=2]
@@ -9,6 +9,12 @@
 [ext_resource path="res://img/mod/ludagun.png" type="Texture" id=7]
 [ext_resource path="res://img/mod/qingtuan.png" type="Texture" id=8]
 [ext_resource path="res://img/mod/xiangchun.png" type="Texture" id=9]
+
+[sub_resource type="DynamicFont" id=2]
+size = 47
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=1]
 size = 46
@@ -141,7 +147,7 @@ margin_left = 301.0
 margin_top = 360.0
 margin_right = 712.0
 margin_bottom = 417.0
-custom_constants/separation = 14
+custom_constants/separation = 22
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -157,18 +163,19 @@ __meta__ = {
 }
 
 [node name="TextureRect2" type="TextureRect" parent="answer/Control"]
-margin_left = 68.0
-margin_right = 158.0
+margin_left = 76.0
+margin_right = 130.0
 margin_bottom = 57.0
 rect_min_size = Vector2( 54, 54 )
 texture = ExtResource( 6 )
+expand = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect3" type="TextureRect" parent="answer/Control"]
-margin_left = 172.0
-margin_right = 226.0
+margin_left = 152.0
+margin_right = 206.0
 margin_bottom = 57.0
 rect_min_size = Vector2( 54, 54 )
 texture = ExtResource( 5 )
@@ -177,19 +184,19 @@ __meta__ = {
 }
 
 [node name="TextureRect4" type="TextureRect" parent="answer/Control"]
-margin_left = 240.0
-margin_top = 16.0
-margin_right = 294.0
+margin_left = 228.0
+margin_right = 282.0
 margin_bottom = 57.0
 rect_min_size = Vector2( 54, 54 )
 texture = ExtResource( 7 )
+expand = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="TextureRect5" type="TextureRect" parent="answer/Control"]
-margin_left = 308.0
-margin_right = 362.0
+margin_left = 304.0
+margin_right = 358.0
 margin_bottom = 57.0
 rect_min_size = Vector2( 54, 54 )
 texture = ExtResource( 8 )
@@ -198,8 +205,8 @@ __meta__ = {
 }
 
 [node name="TextureRect6" type="TextureRect" parent="answer/Control"]
-margin_left = 376.0
-margin_right = 430.0
+margin_left = 380.0
+margin_right = 434.0
 margin_bottom = 57.0
 rect_min_size = Vector2( 54, 54 )
 texture = ExtResource( 9 )
@@ -211,121 +218,122 @@ __meta__ = {
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-margin_left = 6.0
-margin_top = 382.0
-margin_right = 984.0
-margin_bottom = 405.0
+margin_left = 5.0
+margin_top = 387.0
+margin_right = 983.0
+margin_bottom = 435.0
+custom_constants/separation = 18
 alignment = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label6" type="Label" parent="answer/HBoxContainer"]
-margin_left = 295.0
-margin_right = 385.0
-margin_bottom = 56.0
+margin_left = 289.0
+margin_right = 366.0
+margin_bottom = 48.0
 mouse_filter = 1
 custom_colors/font_color = Color( 1, 0.964706, 0.498039, 1 )
-custom_fonts/font = ExtResource( 3 )
+custom_fonts/font = SubResource( 2 )
 text = "龙须饼"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label7" type="Label" parent="answer/HBoxContainer"]
-margin_left = 389.0
-margin_right = 444.0
-margin_bottom = 56.0
+margin_left = 384.0
+margin_right = 432.0
+margin_bottom = 48.0
 mouse_filter = 1
 custom_colors/font_color = Color( 1, 0.964706, 0.498039, 1 )
-custom_fonts/font = ExtResource( 3 )
+custom_fonts/font = SubResource( 2 )
 text = "春卷"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label8" type="Label" parent="answer/HBoxContainer"]
-margin_left = 448.0
-margin_right = 503.0
-margin_bottom = 56.0
+margin_left = 450.0
+margin_right = 498.0
+margin_bottom = 48.0
 mouse_filter = 1
 custom_colors/font_color = Color( 1, 0.964706, 0.498039, 1 )
-custom_fonts/font = ExtResource( 3 )
+custom_fonts/font = SubResource( 2 )
 text = "春菜"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label9" type="Label" parent="answer/HBoxContainer"]
-margin_left = 507.0
-margin_right = 598.0
-margin_bottom = 56.0
+margin_left = 516.0
+margin_right = 593.0
+margin_bottom = 48.0
 mouse_filter = 1
 custom_colors/font_color = Color( 1, 0.964706, 0.498039, 1 )
-custom_fonts/font = ExtResource( 3 )
+custom_fonts/font = SubResource( 2 )
 text = "驴打滚"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label10" type="Label" parent="answer/HBoxContainer"]
-margin_left = 602.0
-margin_right = 655.0
-margin_bottom = 56.0
+margin_left = 611.0
+margin_right = 657.0
+margin_bottom = 48.0
 mouse_filter = 1
 custom_colors/font_color = Color( 1, 0.964706, 0.498039, 1 )
-custom_fonts/font = ExtResource( 3 )
+custom_fonts/font = SubResource( 2 )
 text = "青团"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label11" type="Label" parent="answer/HBoxContainer"]
-margin_left = 659.0
-margin_right = 722.0
-margin_bottom = 56.0
+margin_left = 675.0
+margin_right = 729.0
+margin_bottom = 48.0
 mouse_filter = 1
 custom_colors/font_color = Color( 1, 0.964706, 0.498039, 1 )
-custom_fonts/font = ExtResource( 3 )
+custom_fonts/font = SubResource( 2 )
 text = "香椿"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Line2D0" type="Line2D" parent="."]
-visible = false
-points = PoolVector2Array( 337, 169, 421, 364 )
-default_color = Color( 1, 0.0156863, 0.0156863, 1 )
+points = PoolVector2Array( 337, 169, 406, 357 )
+width = 5.0
+default_color = Color( 1, 0.964706, 0.498039, 1 )
 antialiased = true
 
 [node name="Line2D1" type="Line2D" parent="."]
-visible = false
 points = PoolVector2Array( 405, 173, 335, 359 )
-default_color = Color( 1, 0.0156863, 0.0156863, 1 )
+width = 5.0
+default_color = Color( 1, 0.964706, 0.498039, 1 )
 antialiased = true
 
 [node name="Line2D2" type="Line2D" parent="."]
-visible = false
-points = PoolVector2Array( 482, 171, 578, 370 )
-default_color = Color( 1, 0.0156863, 0.0156863, 1 )
+points = PoolVector2Array( 482, 171, 569, 358 )
+width = 5.0
+default_color = Color( 1, 0.964706, 0.498039, 1 )
 antialiased = true
 
 [node name="Line2D3" type="Line2D" parent="."]
-visible = false
-points = PoolVector2Array( 553, 176, 506, 353 )
-default_color = Color( 1, 0.0156863, 0.0156863, 1 )
+points = PoolVector2Array( 553, 176, 482, 354 )
+width = 5.0
+default_color = Color( 1, 0.964706, 0.498039, 1 )
 antialiased = true
 
 [node name="Line2D4" type="Line2D" parent="."]
-visible = false
 points = PoolVector2Array( 628, 177, 628, 367 )
-default_color = Color( 1, 0.0156863, 0.0156863, 1 )
+width = 5.0
+default_color = Color( 1, 0.964706, 0.498039, 1 )
 antialiased = true
 
 [node name="Line2D5" type="Line2D" parent="."]
-visible = false
 points = PoolVector2Array( 702, 173, 702, 354 )
-default_color = Color( 1, 0.0156863, 0.0156863, 1 )
+width = 5.0
+default_color = Color( 1, 0.964706, 0.498039, 1 )
 antialiased = true
 
 [node name="Label" type="Label" parent="."]
@@ -334,7 +342,7 @@ margin_bottom = 14.0
 custom_colors/font_color = Color( 1, 0.964706, 0.498039, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "请你连一连:
-把对应的节气和对饮的食物匹配上吧"
+把对应的节气和对应的食物匹配上吧"
 __meta__ = {
 "_edit_use_anchors_": false
 }
